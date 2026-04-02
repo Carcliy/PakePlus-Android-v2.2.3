@@ -1,0 +1,29 @@
+{
+  "name": "foreign-trade-calculator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^25.1.7"
+  },
+  "build": {
+    "appId": "com.trade.calc",
+    "productName": "外贸计算器",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico",
+      "publisherName": "自定义名称"
+    },
+    "directories": {
+      "output": "exe-输出"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
